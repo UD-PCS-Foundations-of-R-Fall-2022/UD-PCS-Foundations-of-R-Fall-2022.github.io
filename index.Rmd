@@ -178,7 +178,7 @@ While packages provide a wide variety of functions, R becomes more powerful when
 -   Understand what functions are
 -   Best practices for creating functions
 -   Understand available tools for debugging functions
--   Building functions using non-standard evaluation using the embrace paradigm `{{`
+-   Building functions using non-standard evaluation using the embrace paradigm
 
 #### `r emo::ji("books")` Readings
 
