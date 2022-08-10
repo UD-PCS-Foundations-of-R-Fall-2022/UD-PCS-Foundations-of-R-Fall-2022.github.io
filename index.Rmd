@@ -12,7 +12,8 @@ This repository contains all slides that support Foundations of R for Data Analy
 
 ## `r emo::ji("bangbang")` Schedule & Links
 
-| Week | Date     | Title                                                                                                       | Slides                                 | Assignment | Due Date              | Survey ||----------|----------|-------------|----------|----------|----------|----------|
+| Week | Date     | Title                                                                                                       | Slides                                 | Assignment | Due Date              | Survey |
+|----------|----------|-------------|----------|----------|----------|----------|
 | 01   | 9/26/22  | [Understanding the R Programming Environment](#week-01---understanding-the-r-programming-environment)       | [Link](/week_01.html "Week 01 Slides") |            | 10/3/22, during class |        |
 | 02   | 10/3/22  | [Introduction to Exploratory Data Analysis](#week-02---introduction-to-exploratory-data-analysis)           |                                        |            | 10/10/22, 5:59 pm     |        |
 | 03   | 10/10/22 | [Introduction to the tidyverse](#week-03---introduction-to-the-tidyverse)                                   |                                        |            | 10/17/22, 5:59 pm     |        |
