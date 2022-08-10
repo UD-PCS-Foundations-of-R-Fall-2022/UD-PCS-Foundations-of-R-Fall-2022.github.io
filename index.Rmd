@@ -6,23 +6,21 @@ output: html_document
 library(emo)
 ```
 
-
 # Foundations of R for Data Analysis
 
 This repository contains all slides that support Foundations of R for Data Analysis. The content will be updated each week.
 
 ## `r emo::ji("bangbang")` Schedule & Links
 
-| Week | Date     | Title                                           | Slides | Assignment | Due Date              | Survey |
-|------|---------|-------------------------|-------|-----------|----------------|-----------|
-| 01   | 9/26/22  | [Understanding the R Programming Environment](#week-01---understanding-the-r-programming-environment)     |        |            | 10/3/22, during class |        |
-| 02   | 10/3/22  | [Introduction to Exploratory Data Analysis](#week-02---introduction-to-exploratory-data-analysis)       |        |            | 10/10/22, 5:59 pm     |        |
-| 03   | 10/10/22 | [Introduction to the tidyverse](#week-03---introduction-to-the-tidyverse)                   |        |            | 10/17/22, 5:59 pm     |        |
-| 04   | 10/17/22 | [Data cleaning tools](#week-04---data-cleaning-tools)                             |        |            | 10/24/22, 5:59 pm     |        |
-| 05   | 10/24/22 | [Joining & Reshaping Datasets](#week-05---joining--reshaping-datasets)                    |        |            | 10/31/22, 5:59 pm     |        |
-| 06   | 10/31/22 | [Manipulation of Strings, Factors, and Datetimes](#week-06---manipulation-of-strings-factors-and-datetimes) |        |            | 11/7/22, 5:59 pm      |        |
-| 07   | 11/7/22  | [Creating Functions](#week-07---creating-functions)                              |        |            | 11/14/22, 5:59 pm     |        |
-| 08   | 11/14/22 | [Functional Programming](#week-08---functional-programming)                          |        |            | 11/21/22, 5:59 pm     |        |
+| Week | Date     | Title                                                                                                       | Slides                                 | Assignment | Due Date              | Survey ||----------|----------|-------------|----------|----------|----------|----------|
+| 01   | 9/26/22  | [Understanding the R Programming Environment](#week-01---understanding-the-r-programming-environment)       | [Link](/week_01.html "Week 01 Slides") |            | 10/3/22, during class |        |
+| 02   | 10/3/22  | [Introduction to Exploratory Data Analysis](#week-02---introduction-to-exploratory-data-analysis)           |                                        |            | 10/10/22, 5:59 pm     |        |
+| 03   | 10/10/22 | [Introduction to the tidyverse](#week-03---introduction-to-the-tidyverse)                                   |                                        |            | 10/17/22, 5:59 pm     |        |
+| 04   | 10/17/22 | [Data cleaning tools](#week-04---data-cleaning-tools)                                                       |                                        |            | 10/24/22, 5:59 pm     |        |
+| 05   | 10/24/22 | [Joining & Reshaping Datasets](#week-05---joining--reshaping-datasets)                                      |                                        |            | 10/31/22, 5:59 pm     |        |
+| 06   | 10/31/22 | [Manipulation of Strings, Factors, and Datetimes](#week-06---manipulation-of-strings-factors-and-datetimes) |                                        |            | 11/7/22, 5:59 pm      |        |
+| 07   | 11/7/22  | [Creating Functions](#week-07---creating-functions)                                                         |                                        |            | 11/14/22, 5:59 pm     |        |
+| 08   | 11/14/22 | [Functional Programming](#week-08---functional-programming)                                                 |                                        |            | 11/21/22, 5:59 pm     |        |
 
 All assignments are due by 5:59 pm of the upcoming week. For example, the assignment from Week 01 will be assigned on 10/3/22 and then will be due on 10/10/22 at 5:59 pm. The only exception is Week 01's assignment, which will be submitted during Week 02's class.
 
@@ -42,7 +40,7 @@ All assignments are worth 10 points.
 
 ## Content
 
-### Week 01 - Understanding the R Programming Environment
+### Week 01 - Understanding the R Programming Environment {#week-01---understanding-the-r-programming-environment}
 
 In the first week of the course, we discuss the basics of the R programming language and the most common integrated development environment (IDE) used with R - RStudio. Topics covered will include:
 
@@ -77,7 +75,7 @@ In the first week of the course, we discuss the basics of the R programming lang
     -   Chapters 4-7
     -   Chapters 9-14
 
-### Week 02 - Introduction to Exploratory Data Analysis
+### Week 02 - Introduction to Exploratory Data Analysis {#week-02---introduction-to-exploratory-data-analysis}
 
 We will use the Exploratory Data Analysis (EDA) framework as a way to begin working with R. A key component of EDA is visualizing data. Topics covered will include:
 
@@ -115,7 +113,7 @@ We will use the Exploratory Data Analysis (EDA) framework as a way to begin work
 
 -   [A layered grammar of graphics](https://vita.had.co.nz/papers/layered-grammar.html)
 
-### Week 03 - Introduction to the tidyverse
+### Week 03 - Introduction to the tidyverse {#week-03---introduction-to-the-tidyverse}
 
 The tidyverse is an opinionated collection of R packages that share a similar design philosophy. These tools allow for complex data transformations that aid in the EDA process. Topics covered will include:
 
@@ -124,7 +122,7 @@ The tidyverse is an opinionated collection of R packages that share a similar de
 -   Piping functions using `magrittr`
 -   Creating reproducible examples for troubleshooting (`reprex`)
 
-### Week 04 - Data cleaning tools
+### Week 04 - Data cleaning tools {#week-04---data-cleaning-tools}
 
 No two datasets require the same data cleaning in order to prepare them for analysis. A variety of tools are needed in order to perform data transformations. We will explore a variety of functions that aid in this process. Topics covered will include:
 
@@ -156,7 +154,7 @@ Oftentimes, the data that we work with is not contained in a single table, but m
 -   [Chapter 15 - Factors](https://r4ds.had.co.nz/factors.html)
 -   [Chapter 16 - Dates and times](https://r4ds.had.co.nz/dates-and-times.html)
 
-### Week 06 - Manipulation of Strings, Factors, and Datetimes
+### Week 06 - Manipulation of Strings, Factors, and Datetimes {#week-06---manipulation-of-strings-factors-and-datetimes}
 
 Numeric values are not the only type of data that we must learn to manipulate. Data is often presented as strings, factors, or datetimes. Each of these data types can be manipulated in different ways. Topics covered will include:
 
@@ -171,7 +169,7 @@ Numeric values are not the only type of data that we must learn to manipulate. D
 
 -   [Chapter 19 - Functions](https://r4ds.had.co.nz/functions.html)
 
-### Week 07 - Creating Functions
+### Week 07 - Creating Functions {#week-07---creating-functions}
 
 While packages provide a wide variety of functions, R becomes more powerful when you begin to build your own functions. Topics covered will include:
 
@@ -186,7 +184,7 @@ While packages provide a wide variety of functions, R becomes more powerful when
 
 -   [Chapter 21 - Iteration](https://r4ds.had.co.nz/iteration.html)
 
-### Week 08 - Functional Programming
+### Week 08 - Functional Programming {#week-08---functional-programming}
 
 As our analyses advance, we will frequently find situations where we need to write the same code multiple times. This can cause our code to be error prone. Functional programming allows us to create more concise code through iteration. Topics covered will include:
 
