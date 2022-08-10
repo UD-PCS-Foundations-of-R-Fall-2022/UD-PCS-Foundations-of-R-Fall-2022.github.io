@@ -1,0 +1,195 @@
+---
+output: html_document
+---
+
+```{r, echo = FALSE}
+library(emo)
+```
+
+
+# Foundations of R for Data Analysis
+
+This repository contains all slides that support Foundations of R for Data Analysis. The content will be updated each week.
+
+## `r emo::ji("bangbang")` Schedule & Links
+
+| Week | Date     | Title                                           | Slides | Assignment | Due Date              | Survey |
+|------|---------|-------------------------|-------|-----------|----------------|-----------|
+| 01   | 9/26/22  | [Understanding the R Programming Environment](#week-01---understanding-the-r-programming-environment)     |        |            | 10/3/22, during class |        |
+| 02   | 10/3/22  | [Introduction to Exploratory Data Analysis](#week-02---introduction-to-exploratory-data-analysis)       |        |            | 10/10/22, 5:59 pm     |        |
+| 03   | 10/10/22 | [Introduction to the tidyverse](#week-03---introduction-to-the-tidyverse)                   |        |            | 10/17/22, 5:59 pm     |        |
+| 04   | 10/17/22 | [Data cleaning tools](#week-04---data-cleaning-tools)                             |        |            | 10/24/22, 5:59 pm     |        |
+| 05   | 10/24/22 | [Joining & Reshaping Datasets](#week-05---joining--reshaping-datasets)                    |        |            | 10/31/22, 5:59 pm     |        |
+| 06   | 10/31/22 | [Manipulation of Strings, Factors, and Datetimes](#week-06---manipulation-of-strings-factors-and-datetimes) |        |            | 11/7/22, 5:59 pm      |        |
+| 07   | 11/7/22  | [Creating Functions](#week-07---creating-functions)                              |        |            | 11/14/22, 5:59 pm     |        |
+| 08   | 11/14/22 | [Functional Programming](#week-08---functional-programming)                          |        |            | 11/21/22, 5:59 pm     |        |
+
+All assignments are due by 5:59 pm of the upcoming week. For example, the assignment from Week 01 will be assigned on 10/3/22 and then will be due on 10/10/22 at 5:59 pm. The only exception is Week 01's assignment, which will be submitted during Week 02's class.
+
+All assignments are worth 10 points.
+
+## `r emo::ji("desktop_computer")` Assignment Submission
+
+1.  Open the assignment URL from the above link.
+2.  Accept the assignment.
+3.  Open the newly created repository. It will be named `week-0X-assignment-<YOUR GITHUB USERNAME>`.
+4.  Clone the repository to your local machine.
+5.  Answer questions in the `Week_0X_Assignment.Rmd` file.
+6.  Periodically `add`-`commit`-`push` your work.
+7.  Knit your RMarkdown file to HTML.
+8.  Push your final code.
+9.  Create an issue to indicate you're done. Assign the issue to @rharrington31.
+
+## Content
+
+### Week 01 - Understanding the R Programming Environment
+
+In the first week of the course, we discuss the basics of the R programming language and the most common integrated development environment (IDE) used with R - RStudio. Topics covered will include:
+
+-   Understanding differences between R and RStudio
+-   Understanding the RStudio environment
+-   Differences between R scripts and R Markdown
+-   Typical analytics workflows
+-   Basic operations in R
+-   Data types and classes
+
+#### `r emo::ji("books")` Readings
+
+##### Textbook
+
+-   Review from this past week:
+
+    -   [Chapter 2 - Explore Introduction](https://r4ds.had.co.nz/explore-intro.html)
+    -   [Chapter 4 - Workflow Basics](https://r4ds.had.co.nz/workflow-basics.html)
+    -   [Chapter 6 - Workflow: scripts](https://r4ds.had.co.nz/workflow-scripts.html)
+
+-   Prepare for next week:
+
+    -   [Chapter 3 - Data visualization](https://r4ds.had.co.nz/data-visualisation.html)
+    -   [Chapter 7 - Exploratory Data Analysis](https://r4ds.had.co.nz/exploratory-data-analysis.html)
+    -   [Chapter 11 - Data Import](https://r4ds.had.co.nz/data-import.html)
+
+##### Additional Readings
+
+-   [*Happy Git and GitHub for the useR*](https://happygitwithr.com/)
+
+    -   Chapter 1
+    -   Chapters 4-7
+    -   Chapters 9-14
+
+### Week 02 - Introduction to Exploratory Data Analysis
+
+We will use the Exploratory Data Analysis (EDA) framework as a way to begin working with R. A key component of EDA is visualizing data. Topics covered will include:
+
+-   Understanding packages and how to download, manage, and maintain them 
+
+-   Understanding the Exploratory Data Analysis lifecycle
+
+-   Importing data into R from Excel files and .csvs
+
+-   Visualizing data using \`ggplot2\`
+
+-   Sharing code using git and Github
+
+#### `r emo::ji("books")` Readings
+
+##### Textbook
+
+-   [Chapter 5 - Data transformation](https://r4ds.had.co.nz/transform.html)
+
+-   [Chapter 8 - Workflow: projects](https://r4ds.had.co.nz/workflow-projects.html)
+
+-   [Chapter 9 - Wrangle Introduction](https://r4ds.had.co.nz/wrangle-intro.html)
+
+-   [Chapter 10 - Tibbles](https://r4ds.had.co.nz/tibbles.html)
+
+##### Additional Readings
+
+-   [*Happy Git and GitHub for the useR*](https://happygitwithr.com/)
+
+    -   Chapters 15-19
+
+##### Supplemental Readings
+
+*Note: these are not required, but may be helpful for you to better understand the work.*
+
+-   [A layered grammar of graphics](https://vita.had.co.nz/papers/layered-grammar.html)
+
+### Week 03 - Introduction to the tidyverse
+
+The tidyverse is an opinionated collection of R packages that share a similar design philosophy. These tools allow for complex data transformations that aid in the EDA process. Topics covered will include:
+
+-   Data transformation using the `dplyr` package
+-   Common functions for data transformation (`select`, `filter`, `arrange`, `mutate`, `summarize`)
+-   Piping functions using `magrittr`
+-   Creating reproducible examples for troubleshooting (`reprex`)
+
+### Week 04 - Data cleaning tools
+
+No two datasets require the same data cleaning in order to prepare them for analysis. A variety of tools are needed in order to perform data transformations. We will explore a variety of functions that aid in this process. Topics covered will include:
+
+-   Utilizing conditional statements using `if_else` and `case_when`
+-   Manipulating data `across` columns
+-   Addressing missing data using `replace` and `replace_na`
+-   Addressing missing data using `fill`
+
+#### `r emo::ji("books")` Readings
+
+##### Textbook
+
+-   [Chapter 12 - Tidy data](https://r4ds.had.co.nz/tidy-data.html)
+-   [Chapter 13 - Relational data](https://r4ds.had.co.nz/relational-data.html)
+
+### Week 05 - Joining & Reshaping Datasets
+
+Oftentimes, the data that we work with is not contained in a single table, but multiple. In cases like this, we must "join" data together. Further, data is frequently in the wrong "shape" for analysis - sometimes it must be "wide" and sometimes it must be "long". The tidyverse provides tools to more easily shape data to support analysis. Topics covered will include:
+
+-   Understanding types of joins - right, left, inner, etc.
+-   Identifying "tidy" data Reshaping data using `pivot_wider` and `pivot_longer`
+-   Using tidy data to create more complex data visualizations with `ggplot2`
+
+#### `r emo::ji("books")` Readings
+
+##### Textbook
+
+-   [Chapter 14 - Strings](https://r4ds.had.co.nz/strings.html)
+-   [Chapter 15 - Factors](https://r4ds.had.co.nz/factors.html)
+-   [Chapter 16 - Dates and times](https://r4ds.had.co.nz/dates-and-times.html)
+
+### Week 06 - Manipulation of Strings, Factors, and Datetimes
+
+Numeric values are not the only type of data that we must learn to manipulate. Data is often presented as strings, factors, or datetimes. Each of these data types can be manipulated in different ways. Topics covered will include:
+
+-   Understanding differences between strings and factors
+-   String manipulation utilizing the `stringr` package and string matching concepts utilizing regex
+-   Using `forcats` for factor manipulation
+-   Using `lubridate` to manipulate dates
+
+#### `r emo::ji("books")` Readings
+
+##### Textbook
+
+-   [Chapter 19 - Functions](https://r4ds.had.co.nz/functions.html)
+
+### Week 07 - Creating Functions
+
+While packages provide a wide variety of functions, R becomes more powerful when you begin to build your own functions. Topics covered will include:
+
+-   Understand what functions are
+-   Best practices for creating functions
+-   Understand available tools for debugging functions
+-   Building functions using non-standard evaluation using the embrace paradigm `{{`
+
+#### `r emo::ji("books")` Readings
+
+##### Textbook
+
+-   [Chapter 21 - Iteration](https://r4ds.had.co.nz/iteration.html)
+
+### Week 08 - Functional Programming
+
+As our analyses advance, we will frequently find situations where we need to write the same code multiple times. This can cause our code to be error prone. Functional programming allows us to create more concise code through iteration. Topics covered will include:
+
+-   The relationship between loops and functional programming
+-   Vectorizing code
+-   The `map` paradigm
